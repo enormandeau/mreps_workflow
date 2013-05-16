@@ -1,4 +1,4 @@
-dummy:
+nothing:
 
 install:
 	cp mreps_workflow.sh /usr/local/bin/mreps_workflow.sh
