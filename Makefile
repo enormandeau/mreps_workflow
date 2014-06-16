@@ -8,3 +8,4 @@ install:
 
 test:
 	./mreps_workflow.sh test_data/454_test_sequences.fasta
+
