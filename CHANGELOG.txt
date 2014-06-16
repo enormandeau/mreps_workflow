@@ -1,4 +1,7 @@
 List of changes
 
-v0.0.1
+v0.2
+- Added some documentation
+
+v0.1
 - Basic implementation
