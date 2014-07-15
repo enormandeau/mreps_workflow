@@ -1,5 +1,9 @@
 List of changes
 
+v0.3
+- Light code cleanup
+- Changed 'mreps_formated' to 'mreps_formatted'
+
 v0.2
 - Added some documentation
 

@@ -1,6 +1,8 @@
 *.fasta
 *.fasta.gz
 *.log
+*.mreps_formatted
+*.mreps_repeats
 *.odt
 *.swp
 *.tsv

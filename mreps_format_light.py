@@ -4,7 +4,7 @@
 """Format output of mreps to a usable format.
 
 Usage:
-    ./mreps_format_light.py <mreps_output> <sequence_file> <formated_result>
+    ./mreps_format_light.py <mreps_output> <sequence_file> <formatted_result>
 """
 
 # Note: This version does not use annotation (see commented code below)
@@ -30,7 +30,6 @@ class Sequence():
         self.error_rate = line[6].strip()
         self.repeat = line[7].strip()
         self.sequence = line[8].strip()
-        #self.annotation = line[9].strip()
         self.flank_right = str(len(self.sequence) - int(self.end))
         self.seq_len = str(len(self.sequence))
     def __str__(self):
@@ -41,7 +40,6 @@ if __name__ == '__main__':
     try:
         in_file = sys.argv[1]
         seq_file = sys.argv[2]
-        #annot_file = sys.argv[3]
         out_file = sys.argv[3]
     except:
         print __doc__
@@ -49,14 +47,6 @@ if __name__ == '__main__':
 
     with open(seq_file) as f:
         seq_dict = SeqIO.to_dict(SeqIO.parse(f, "fasta"))
-
-    #with open(annot_file) as f:
-    #    annot_dict = {}
-    #    for line in f:
-    #        if line.strip() != "":
-    #            l = line.strip()
-    #            l = l.split("\t")
-    #            annot_dict[l[0]] = l[2]
 
     title_line = "name\tstart\tend\tlength\tflank_right\t\
     sequence_len\tperiod\tn_repeats\terror_rate\trepeat\tsequence\n"
@@ -73,9 +63,10 @@ if __name__ == '__main__':
                     except:
                         name = l.split()[0].replace(">", "")
                     seq = seq_dict[name].seq.tostring()
-                    #annot = annot_dict[name]
                     l += "\t" + seq
-                    l = l.replace(":", "").replace("->", "").replace("  ", "\t").replace("\t\t", "\t").replace("\t\t", "\t").replace("\t\t", "\t").replace("\t\t", "\t").replace("\t \t", "\t")
+                    l = l.replace(":", "").replace("->", "").replace("  ", "\t").
+                    l = l.replace("\t\t", "\t").replace("\t\t", "\t").replace("\t\t", "\t")
+                    l = l.replace("\t\t", "\t").replace("\t \t", "\t")
                     l = Sequence(l)
                     out_f.write(str(l) + "\n")
 
