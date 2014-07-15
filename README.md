@@ -48,6 +48,9 @@ make test
 
 ## Use
 
+**NOTE**: Then contig names must not contain spaces. You can replace any spaces
+in the names by underscores (`_`).
+
 Launching `mreps_workflow.sh` is done with the following command:
 
 ```
