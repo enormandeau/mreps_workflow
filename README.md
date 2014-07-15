@@ -50,6 +50,5 @@ mreps_workflow.sh fasta_filename.fasta
 
 ## Contributions are welcome
 
-If you find a bug or improve `mreps_workflow`, please contact the author so
-that `mreps_workflow` can be improved.
+If you find a bug or improve `mreps_workflow`, please contact the author.
 
