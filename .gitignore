@@ -1,9 +1,11 @@
-*private*
-*.swp
-*.odt
-*.tsv
+*.fasta
+*.fasta.gz
 *.log
+*.odt
+*.swp
+*.tsv
+*/population_map*
+*barcode*
+*private*
 *~
 TODO
-*barcode*
-*/population_map*
