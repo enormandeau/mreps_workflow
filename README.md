@@ -12,8 +12,14 @@ MacOSX but has not been tested.
 
 ### mreps
 
-Obviously, a copy of `mreps` is needed and must be installed on your computer.
-A version of `mreps` is included with the workflow.
+A copy of `mreps` must be installed on your computer.  A version of `mreps` is
+included with the workflow. Decompress the mreps archive and run `make` from
+the the new mreps foler. Then copy the `mreps` executable in your path, for
+example with:
+
+```
+sudo cp mreps /usr/local/bin
+```
 
 ## Installation
 
