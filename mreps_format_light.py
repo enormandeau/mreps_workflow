@@ -64,7 +64,7 @@ if __name__ == '__main__':
                         name = l.split()[0].replace(">", "")
                     seq = seq_dict[name].seq.tostring()
                     l += "\t" + seq
-                    l = l.replace(":", "").replace("->", "").replace("  ", "\t").
+                    l = l.replace(":", "").replace("->", "").replace("  ", "\t")
                     l = l.replace("\t\t", "\t").replace("\t\t", "\t").replace("\t\t", "\t")
                     l = l.replace("\t\t", "\t").replace("\t \t", "\t")
                     l = Sequence(l)
