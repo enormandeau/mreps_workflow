@@ -51,6 +51,13 @@ make test
 **NOTE**: Then contig names must not contain spaces. You can replace any spaces
 in the names by underscores (`_`).
 
+### Changing the `mreps` parameters
+
+The `mreps` parameters must be adjusted in the `mreps_workflow.sh` script. You
+then need to run `make install` again so that the new parameters can be used.
+
+### Running mreps_workflow.sh
+
 Launching `mreps_workflow.sh` is done with the following command:
 
 ```
