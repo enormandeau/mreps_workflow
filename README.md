@@ -1,7 +1,7 @@
 # mreps_workflow
 
-Extract interesting microsatellite markers with mreps and format them into a
-usable .tsv format
+Extract interesting microsatellite markers from a reference genome with mreps
+and format them into a usable .tsv format
 
 ## Dependencies
 

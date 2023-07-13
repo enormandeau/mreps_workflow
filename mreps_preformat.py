@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 
 """Prepare mreps output for mreps_format_light.py
 
@@ -16,12 +15,12 @@ if __name__ == '__main__':
     try:
         infile = sys.argv[1]
     except:
-        print __doc__
+        print(__doc__)
         sys.exit(1)
     with open(infile) as f:
         for line in f:
             if line.startswith("Processing"):
                 current = line.strip().replace("Processing sequence ", "").replace("'", "")
             elif "->" in line and "from" not in line:
-                print current + " " + line.strip()
+                print(current + " " + line.strip())
 

@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 
 """Format output of mreps to a usable format.
 
@@ -15,7 +14,7 @@ from copy import deepcopy
 try:
     from Bio import SeqIO
 except:
-    print "This program requires the biopython library"
+    print("This program requires the biopython library")
     sys.exit(1)
 
 class Sequence():
@@ -42,7 +41,7 @@ if __name__ == '__main__':
         seq_file = sys.argv[2]
         out_file = sys.argv[3]
     except:
-        print __doc__
+        print(__doc__)
         sys.exit(0)
 
     with open(seq_file) as f:
