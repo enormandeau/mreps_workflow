@@ -61,7 +61,7 @@ if __name__ == '__main__':
                         l = name + "\t" + l
                     except:
                         name = l.split()[0].replace(">", "")
-                    seq = seq_dict[name].seq.tostring()
+                    seq = str(seq_dict[name].seq)
                     l += "\t" + seq
                     l = l.replace(":", "").replace("->", "").replace("  ", "\t")
                     l = l.replace("\t\t", "\t").replace("\t\t", "\t").replace("\t\t", "\t")
