@@ -24,7 +24,7 @@ mreps_preformat.py $NAME.mreps_repeats | \
 
 # Run mreps_format_light.py to create more usable/readable output
 echo "   Running mreps_format_light.py"
-./mreps_format_light.py $NAME.mreps_formatted $NAME.fasta $NAME.mreps_final.tsv
+mreps_format_light.py $NAME.mreps_formatted $NAME.fasta $NAME.mreps_final.tsv
 
 # Output the number of markers found and the name of the final output file
 echo -ne "Number of markers: "
